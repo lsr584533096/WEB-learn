@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cmn-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var gender = 0;
+    /*if (gender == 1){
+    console.log("你是男的")
+    }else if (gender == 2){
+        console.log('你是妹子')
+    }else {
+        console.log('你是春哥')
+    }*/
+        
+        switch(gender) {
+            case 1:
+                console.log('你是男的');
+                break;
+            case 2:
+                console.log('你是妹子');
+                break;
+            case 3:
+                console.log('你是春哥吗');
+                break;
+            default:
+                console.log('不知道你的性别，难道你是人妖');
+        }
+        
+        var eat = 1;
+        switch(eat) {
+            case 1://没有1
+            case 2:
+                console.log('2');
+                break;
+            case 3:
+                console.log('3');
+                break;
+            default:
+                console.log('4');
+        }
+        
+        var arr = ['a','b','c'];
+        /*for (var num = 0; num < arr.length; num++){
+            console.log(arr[num]);}*/
+        
+        var num = 0;
+        while(num < arr.length){
+            console.log(arr[num]);num++
+        }
+        
+        var myArr = [['a','b'],['c','d']]
+        for (var i = 0 ;i < myArr.length;i++){
+            console.log(myArr[i])
+        for (var j = 0 ;j < myArr[i].length;j++){
+            console.log(myArr[i][j])
+        }
+    }
+       /* for (var key in arr){
+            console.log(arr[key])
+        }*/
+        
+        /*arr.forEach(function (val,key){
+            console.log(val)
+        })*/
+        
+        </script>
+</body>
+</html>

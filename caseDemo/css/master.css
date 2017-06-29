@@ -1,0 +1,320 @@
+@charset"utf-8";
+body,
+div,
+p,
+ul,
+ol,
+dl,
+dt,
+ddli,
+form,
+input,
+table,
+th,
+td,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0
+}
+
+img {
+    border: none
+}
+
+address,
+caption,
+dfn,
+th,
+var,
+cite,
+code,
+s,
+label,
+input,
+select,
+textarea,
+em,
+b,
+i {
+    font-style: normal;
+    font-weight: normal;
+    font-family: inherit
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+body {
+    background: #f5f5f5;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-family: 'Microsoft YaHei', "微软雅黑", 'Simsun', '宋体', 'Arial', sans-serif;
+}
+
+input[type:"submit"],
+input[type="reset"],
+input[type="button"] {
+    cursor: pointer
+}
+
+select,
+input,
+textarea {
+    font-family: inherit;
+    margin: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+    line-height: 0
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.flt {
+    float: left
+}
+
+.frt {
+    float: right
+}
+
+
+/* layout */
+.header-box{
+    height: 100px;
+
+}
+.header{
+    width: 1000px;
+    margin: 0 auto;
+}
+.hd-logo{
+
+    font-size: 42px;
+    text-align: center;
+    line-height: 100px;
+
+}
+.hd-logo a{
+        color: #f06560;
+}
+.hd-logo a:hover{
+    text-decoration: none;
+}
+.nav ul{
+    text-align: center;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 0 50px;
+    font-size: 24px
+}
+.nav ul li a{
+    color: #a9afb8
+}
+.nav ul li.current a{
+    color: #f06560;
+}
+.nav ul li a:hover{
+    text-decoration: none;
+}
+.body-box{
+ /*   height: 600px;*/
+    background: #ccc;
+
+}
+.container{
+    width: 1000px;
+    min-height: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+}
+.items-box{
+    padding: 10px;
+
+}
+.item{
+    float: left;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-bottom: 20px
+}
+.item h3{
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #000
+}
+.item-img img{
+    
+    width: 400px;
+    height: 300px;
+    transition: all 0.3s Linear
+}
+.item-img img:hover{
+    opacity: 0.7;
+}
+.footer{
+    height: 100px;
+    background: #dbdbdb;
+}
+.copyright{
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 100px;
+    color: #666;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*重置*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content: ;}
+abbr,acronym{border:0;}
+body{color:#666; background-color:#fff;font: 12px/1.5 '微软雅黑',tahoma,arial,'Hiragino Sans GB',宋体,sans-serif;}
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix {zoom:1;}	
+/*基本样式*/
+.poster-main{
+	width: 1000px;
+	height: 500px;
+	position: relative;
+	margin: 30px auto;
+}
+.poster-main a,.poster-main img{
+	display:block;
+}
+.poster-main .poster-list{
+	width: 1000px;
+	height: 500px;
+}
+.poster-main .poster-list .poster-item{ 
+	width: 200px;
+	height: 500px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.poster-main .poster-btn{ 
+	position:absolute;
+	top:0;
+	z-index:10; 
+	cursor:pointer;  
+}
+.poster-main .poster-prev-btn{
+	left:0; 
+	background: url(../img/left.png) no-repeat center center;
+}
+.poster-main .poster-next-btn{
+	right:0; 
+	background: url(../img/right.png) no-repeat center center;
+}
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('../fonts/Circular-Book.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Circular';
+	src: url('../fonts/Circular-Bold.woff') format('woff');
+	font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+	background: #18212D;
+}
+
+body {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  color: white;
+  font-family: 'Circular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+	min-width: 18rem;
+}
+
+div {
+	width: 2rem;
+	height: 2rem;
+}
+
+.red {
+  background-color: #FF324A;
+}
+
+.green {
+  background-color: #31FFA6;
+}
+
+.blue {
+  background-color: #206EFF;
+}
+
+.yellow {
+  background-color: #FFFF99;
+}
