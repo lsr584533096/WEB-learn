@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cmn-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>DOM对象</title>
+</head>
+<body>
+<p id="pnode"></p>
+<script type="text/javascript">
+    var newInput = document.createElement("input");
+    var pnode = document.getElementById("pnode");
+    console.log(newInput);
+    document.body.appendChild(newInput);
+    var newText = document.createTextNode("text");
+    console.log(newText);
+    
+    </script>
+
+
+
+<!--   <ul id="father">
+       <li>1</li>
+       <li>2</li>
+       <li>3</li>
+       <li>4</li>
+       <li>5</li>
+       <li>6</li>
+       <li>7</li>
+   </ul>
+   
+   
+   
+    <p id="pNode" title="hello">Java</p>
+
+    <input id="inp" type="text" value="dddd">
+    <script type="text/javascript">
+        var li_num = 0;
+        var childNodes = document.getElementById("father").childNodes;
+        for(var i = 0;i < childNodes.length; i++){
+            document.write("节点名:" + childNodes[i].nodeName+"");
+            document.write("节点类型:" + childNodes[i].nodeType+"");
+            if(childNodes[i].nodeType ==1){
+                document.write("我是"+childNodes[i].innerHTML+"<br>");}
+                         else{
+                               document.write("<br>");
+                console.log("这是空节点")
+                               }      
+            }
+        
+        document.write("子节点数目:"+childNodes.length+"<br>")
+        document.write("li子节点数目:"+li.num+"<br>")
+        document.write("文本子节点数目:"+(childNodes.length-li.num))
+    </script>-->
+</body>
+</html>

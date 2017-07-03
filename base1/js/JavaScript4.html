@@ -44,6 +44,9 @@
     }
         
         function maxNum(x,y){
+            if (typeof(x) != 'number' || typeof(y) != 'number'){
+                return('no number')
+            }
             if(x>y){
                 return x
             }else if(y>x){
@@ -52,8 +55,15 @@
                 return('我们相等')
             }
         }
-        var maxValue = maxNum(11,9);
+        var maxValue = maxNum(11,'9');
         console.log(maxValue)
+        function isNaN(x){
+            if(typeof(x) != 'number'){
+                return false;
+            }else{
+                return true;
+            }
+        }
         
         var zs = 130;
         var ls = 112;

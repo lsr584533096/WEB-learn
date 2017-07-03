@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cmn-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--    <ul id="father">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+    </ul>
+    <input type="button" id="createbtn" value="祭出紫金葫芦">
+    <script type="text/javascript">
+    function createnode(){
+        var btn = document.createElement("input");
+        btn.setAttribute("type","button");
+        btn.setAttribute("name","紫金葫芦");
+        btn.setAttribute("value","吸进去");
+        btn.setAttribute("onclick","removenode()");
+        document.body.appendChild(btn);
+    }
+    function removenode(){
+        var fnode = document.getElementById("father");
+        var nodes = fnode.childNodes;
+        for(var i =0;i<nodes.length;i++){
+            if(nodes[i]&& nodes[i].nodeType == 1){
+                var rm = fnode.removeChild(nodes[i]);
+                rm = null;
+                break;
+            }
+        }
+    }
+    var createbtn = document.getElementById("createbtn");
+        createbtn.onclick = createnode ;
+    </script>-->
+    
+    <!--<div style="height:800px"></div>
+    <script>
+    var cWidth = document.documentElement.scrollWidth;
+    var cHeight = document.documentElement.scrollHeight;
+    console.log(cWidth);
+    console.log(cHeight);
+    
+    </script>-->
+    
+    
+    <div id="box"></div>
+    <script type="text/javascript">
+    var oDiv = document.getElementById("box");
+        oDiv.onmousedown = function(ev){
+           var oEvent = ev;
+           var disX = oEvent.clientX - oDiv.offsetLeft;
+           var disY = oEvent.clientY - oDiv.offsetTop;
+           document.onmousemove = function(ev){
+               oEvent = ev;
+               oDiv.style.left = oEvent.clientX - disX +"px";
+               oDiv.style.top = oEvent.clientY - disY +"px";
+               
+           }
+           document.onmouseup = function(){
+               document.onmousemove = null;
+               document.onmouseup = null;
+           } 
+        }
+    
+    
+    
+    
+    </script>
+    
+    
+    
+</body>
+</html>
