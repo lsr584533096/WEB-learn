@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cmn-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+   <div class="wrap">
+        <div class="topbox">
+            <div class="top content">
+                <span class="pr20">财富热线740-8888</span>
+                <span class="bl-line pl20">
+                    <a href="#">帮助中心</a>
+                    <a class="pl20" href="#">转赚论坛</a>
+                </span>
+                
+            </div>
+        </div>
+       <div class="headbox">
+           <div class="head content">
+             <div class="logo flt">
+               <img src="images/%E6%B0%91%E7%94%9F.png">
+             </div>
+             <div class="tabnav frt">
+                 <ul>
+                     <li><a href="#">购物</a></li>
+                     <li><a href="#">小区</a></li>
+                     <li class="cur"><a href="#">资产</a></li>
+                 </ul>
+             </div>
+           </div>
+       </div>
+       <div class="navbox">
+           <div class="nav content">
+               <ul>
+                   <li class="cur">首页</li>
+                   <li>我要定制</li>
+                   <li>我要赚钱</li>
+                   <li>转让专区</li>
+                   <li>我的账户</li>
+                   <li>商旅优惠</li>
+               </ul>
+           </div>
+       </div>
+       <div class="login-reference content">
+           <div class="loginbg"></div>
+           <div class="loginbox">
+               <div class="input-row">
+                  <i class="icon-username"></i>
+                   <input class="login-input" type="text" placeholder="请输入用户名">
+               </div>
+               <div class="input-row">
+                  <i class="icon-lock"></i>
+                   <input class="login-input" type="password" placeholder="请输入密码">
+               </div>
+               <div class="input-row">
+                  <i class="icon-code"></i>
+                   <input class="login-input-code" type="text" placeholder="输入验证码">
+                   <img class="codeimg frt" src="images/yzm.png">
+               </div>
+               <button class="btn-login">登录</button>
+               <div class="login-link clearfix">
+                   <a class="flt" href="#">忘记密码</a>
+                   <a class="frt" href="#">立即注册</a>
+               </div>
+           </div>
+       </div>
+       <div class="focus">
+           <div class="flexslider">
+             <ul class="slides">
+                <li style="background:url(images/img1.jpg) 50% 0 no-repeat;"></li>
+                <li style="background:url(images/img2.jpg) 50% 0 no-repeat;"></li>
+                <li style="background:url(images/img3.jpg) 50% 0 no-repeat;"></li>
+                <li style="background:url(images/img4.jpg) 50% 0 no-repeat;"></li>
+                <li style="background:url(images/img5.jpg) 50% 0 no-repeat;"></li>
+             </ul>
+           </div>
+      </div>
+       <div class="contain">
+           <div class="mode content">
+               <div class="newsbox flt">
+                  <div class="item-title clearfix">
+                   <h2 class="flt">转赚数据</h2>
+                   <a class="frt" href="#">查看更多</a>
+                   </div>
+                   <div class="news-bd" id="zzData"></div>
+               </div>
+               <div class="newsbox ml28 flt">
+                   <div class="item-title clearfix">
+                       <h2 class="flt">转赚世界</h2>
+                       <a class="frt" href="#">查看更多&gt;&gt;</a>
+                   </div>
+                   <div class="news-bd">
+                       <ul>
+                           <li>
+                               <a href="#">8月26日系统维护公告</a>
+                               <span>2016-08-26</span>
+                           </li>
+                           <li>
+                               <a href="#">8月26日系统维护公告</a>
+                               <span>2016-08-26</span>
+                           </li>
+                           <li>
+                               <a href="#">8月26日系统维护公告</a>
+                               <span>2016-08-26</span>
+                           </li>
+                           <li>
+                               <a href="#">8月26日系统维护公告</a>
+                               <span>2016-08-26</span>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="newsbox frt">
+                   <div class="item-title clearfix">
+                       <h2 class="flt">转赚公告</h2>
+                       <a class="frt" href="#">查看更多&gt;&gt;</a>
+                   </div>
+                   <div class="news-bd"></div>
+               </div>
+           </div>
+       <div class="mode content">
+           <div class="item-title clearfix">
+                <h2 class="flt">正在热销产品</h2>
+                <a class="flt" href="#">查看更多&gt;&gt;</a>
+           </div>
+       </div>
+       </div>
+       <div class="foot">
+           <div class="fdlink">
+               <span class="fdhead">民生电商旗下网站 </span>
+               <div class="linkbox">
+                   <a href="#">民生电商旗下网站</a>
+                   <a href="#">民生电商小区购物</a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+	    $('.flexslider').flexslider({
+		directionNav: true,
+		pauseOnAction: false
+	});
+});
+</script>
+    <script src="js/main.js"></script>
+    <script src="js/highcharts.js"></script>
+    
+    
+    
+    <script>$(function () {
+    $('#zzData').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        colors:['#5062ad', '#5c76d5', '#00afff', '#30d981', '#6AF9C4'],
+        title: {
+            text: null
+        },
+        legend:{align:'left',
+               layout:'vertical',y:-30
+               },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false},
+                    showInLegend: true
+                  
+                    }
+
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: [
+                ['100万以上',   25.0],
+                ['50到100万',       12.9],
+                ['5到50万',     44.7],
+                ['5万以下',   17.5]
+            ]
+        }]
+    });
+});
+    </script>
+</body>
+</html>

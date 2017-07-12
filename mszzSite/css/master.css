@@ -1,0 +1,443 @@
+@charset"utf-8";
+body,
+div,
+p,
+ul,
+ol,
+dl,
+dt,
+ddli,
+form,
+input,
+table,
+th,
+td,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0
+}
+
+img {
+    border: none
+}
+
+address,
+caption,
+dfn,
+th,
+var,
+cite,
+code,
+s,
+label,
+input,
+select,
+textarea,
+em,
+b,
+i {
+    font-style: normal;
+    font-weight: normal;
+    font-family: inherit
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+body {
+    background: #f5f5f5;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-family: 'Microsoft YaHei', "微软雅黑", 'Simsun', '宋体', 'Arial', sans-serif;
+}
+
+input[type:"submit"],
+input[type="reset"],
+input[type="button"] {
+    cursor: pointer
+}
+
+select,
+input,
+textarea {
+    font-family: inherit;
+    margin: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+    line-height: 0
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.flt {
+    float: left
+}
+
+.frt {
+    float: right
+}
+
+.ml28 {
+    margin-left: 28px
+}
+
+.pl20 {
+    padding-left: 20px
+}
+
+.pr20 {
+    padding-right: 20px
+}
+
+.bl-line {
+    border-left: 1px solid #ccc
+}
+
+.content {
+    width: 960px;
+    margin: 0 auto
+}
+
+.headbox {
+    height: 90px;
+}
+
+.head {
+    height: 90px;
+    background: #fff
+}
+
+.topbox {
+    height: 30px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #aaa
+}
+
+.top span {
+    display: inline-block;
+    line-height: 30px
+}
+
+.tabnav {
+    padding-top: 50px
+}
+
+.tabnav ul li {
+    float: left;
+    width: 120px;
+    height: 40px;
+    background: #1c408a;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 1px;
+    border-radius: 5px 5px 0 0
+}
+
+.tabnav ul li a {
+    color: #5D6696
+}
+
+.navbox {
+    height: 40px;
+    background: #5c76d5
+}
+
+.nav ul li {
+    width: 160px;
+    height: 40px;
+    float: left;
+    color: #fff;
+    line-height: 40px;
+    text-align: center
+}
+
+.nav ul li.cur {
+    background: #47eb94;
+    color: #fff
+}
+
+.focus {
+    height: 360px;
+    background: #6c0
+}
+
+
+/* flexslider */
+
+.flexslider {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+    background: url(../images/loading.gif) 50% no-repeat;
+}
+
+.slides {
+    position: relative;
+    z-index: 1;
+}
+
+.slides li {
+    height: 360px;
+}
+
+.flex-control-nav {
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+
+.flex-control-nav li {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 5px;
+    *display: inline;
+    zoom: 1;
+}
+
+.flex-control-nav a {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 40px;
+    overflow: hidden;
+    background: url(../images/dot.png) right 0 no-repeat;
+    cursor: pointer;
+}
+
+.flex-control-nav .flex-active {
+    background-position: 0 0;
+}
+
+.flex-direction-nav {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    top: 45%;
+}
+
+.flex-direction-nav li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+}
+
+.flex-direction-nav li a.flex-prev {
+    left: 40px;
+    background: url(../images/prev.png) center center no-repeat;
+}
+
+.flex-direction-nav li a.flex-next {
+    right: 40px;
+    background: url(../images/next.png) center center no-repeat;
+}
+
+.login-reference {
+    position: relative
+}
+
+.loginbg,
+.loginbox {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 280px;
+    height: 240px;
+    padding: 20px 15px;
+    z-index: 5
+}
+
+.loginbg {
+    background: #08c;
+    filter: alpha(opacity=60);
+    -webkit-opacity: 0.6;
+    -moz-opacity: 0.6;
+    opacity: 0.6
+}
+
+.login-input, .login-input-code{
+    display: inline-block;
+    height: 20px;
+    padding: 5px 5px 5px 35px;
+    vertical-align: middle;
+}
+.login-input{width: 240px}
+
+.login-input-code{width: 140px}
+
+/*.input-row i{display: block;background: #08c}*/
+
+.input-row {
+    position: relative;
+    margin-bottom: 15px
+}
+
+
+.icon-username, .icon-lock, .icon-code{
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 24px;
+    height: 24px;
+   
+}
+
+
+
+.icon-username {
+    background: url(../images/username.png)no-repeat
+}
+
+.icon-lock {
+    background: url(../images/pwd.png)no-repeat 5px 0
+}
+
+.icon-code{
+    background: url(../images/link.png)no-repeat 2px 0
+}
+
+.codeimg{display: inline-block;height: 30px;vertical-align: middle}
+
+.btn-login{width: 280px;height: 40px; line-height: 32px;font: normal 16px 'Microsoft Yahei';background: #f44;border:none;border-radius: 4px;color: #fff;cursor: pointer}
+
+.login-link{padding: 10px}
+
+.tabnav ul li.cur {
+    background: #5c76d5;
+    color: #fff
+}
+
+.tabnav ul li.cur a {
+    color: #fff
+}
+
+.contain {
+    min-height: 600px;
+    width: 960px;
+    margin: 0 auto
+}
+
+.mode {
+    height: 200px;
+}
+
+.newsbox {
+    width: 302px
+}
+
+.news-bd {
+    border: 1px solid #ccc;
+    height: 158px;
+    padding: 5px 10px
+}
+
+.news-bd ul li {
+    line-height: 30px;
+    border-top: 1px dotted #ccc;
+    line-height: 36px;
+    font-size: 14px;
+    color: #666
+}
+
+.news-bd ul li:first-child {
+    border-top: 0
+}
+
+.news-bd ul li span {
+    float: right;
+    font-size: 12px;
+    color: #999
+}
+
+.item-title h2 {
+    height: 50px;
+    font: normal 18px 'Microsoft Yahei';
+    line-height: 50px;
+    margin-right: 10px
+}
+
+.item-title a {
+    line-height: 50px
+}
+
+.foot {
+    height: 355px;
+    border-top: 1px solid #ccc;
+    padding-top: 30px
+}
+
+.fdlink {
+    position: relative
+}
+
+.fdhead {
+    display: block;
+    padding: 0 5px;
+    width: 112px;
+    border: 1px solid #ccc;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden
+}
+
+.linkbox {
+    position: absolute;
+    top: 19px;
+    left: 0;
+    width: 112px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-top: 0;
+    z-index: 5;
+    display: none
+}
+
+.linkbox a {
+    display: block;
+    line-height: 20px
+}
+
+.fdlink:hover .fdhead {
+    border-bottom: 0
+}
+
+.fdlink:hover .linkbox {
+    display: block
+}
