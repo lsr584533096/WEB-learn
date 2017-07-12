@@ -7,9 +7,13 @@
         table td{
             padding: 0 10px
         }
+        #box{
+            background-color: aqua
+        }
     </style>
 </head>
 <body>
+   <div id="box"></div>
     <div class="goods-list">
         <table>
             <thead>
@@ -26,8 +30,13 @@
         url:'js/data.json',
         type:'GET',
         dataType:'json',
+        async:false,
         success:function(res){
-            console.log(res)
+
+        console.log(res)
+            setTimeout(function(){
+        
+    },3000)
             if(res && res.code == 200){
                 var list = res.data.list;
                 var listDOM = '';
@@ -38,6 +47,7 @@
                 $('#goods').append(listDOM)
             }
             ;
+            
         },
         error:function(err){
         console.log(err)
@@ -50,6 +60,14 @@
         }
         return tmp;
     }
+
+        var box = document.getElementById('box');
+        setTimeout(function(){
+            box.style.height = '500px'
+        },1000)
+        setTimeout(function(){
+            box.style.width = '600px'
+        },2000)
         
     </script>
 </body>

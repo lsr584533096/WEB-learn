@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>移动端适配布局</title>
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+        .box{
+            font-size: 14px;
+        }
+        .box{
+            height: 5rem;
+            font-size: 1.8rem;
+        }
+        @media only screen and (max-device-width:360px) and (min-device-width:320px){
+            .box{
+                background: #08c;
+            }
+        }
+        /*iphone6*/
+        @media screen and (max-device-width:667px) and (min-device-width:375px) and (-webkit-min-device-pixel-ratio:2){
+            .box{
+                background: #6c0;
+            }
+        html{
+          font-size:75%;}
+        }
+         /*iphone6 plus*/
+        @media screen and (max-device-width:736px) and (min-device-width:414px) and (-webkit-min-device-pixel-ratio:3){
+            .box{
+                height: 8rem;
+                background: #f60;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">输入一些文字</div>
+<!--    <img src="logo.svg">-->
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>! or html:5</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        .mark{background-color: #f00}
+        mark{background-color: #08c}
+        .text-small{
+            font-size: 10px;
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <p>O<small class="text-small">2</small></p>
+    <mark>qqq</mark>
+    <span class="mark">kkk</span>
+    <form method="get" action="">
+        <label  for="someInput">Your Name:</label>
+        <input type="text" id="someInput" name="someInput" placeholder="Douglas Quaid" required autofocus>
+        <button type="submit">Go</button>
+    </form>
+    <audio autoplay="autoplay" controls="controls">
+        <source src="file.ogg" />
+        <source src="media/%E5%BD%A9%E4%BA%91%E4%B9%8B%E5%8D%97.mp3" />
+        <a href="file.mp3">Download this file</a>
+    </audio>
+    <form action="" method="post">
+        <label for="username">Create a username</label>
+        <input type="text" name="username" id="username" placeholder="4<>10" pattern="[A-Za-z]{4,10}" autofocus required> <!--4,10是指至少4位数字，至多10位-->
+        <button type="submit">Go</button>
+    </form>
+</body>
+</html>
